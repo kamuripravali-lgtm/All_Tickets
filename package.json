@@ -1,0 +1,14 @@
+{
+  "name": "travel-booking-workspace",
+  "version": "1.0.0",
+  "description": "All-in-One Travel Ticket Booking Platform Workspace",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client --legacy-peer-deps && npm install --prefix server",
+    "dev:server": "npm start --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "npx concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
